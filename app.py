@@ -167,8 +167,8 @@ elif project == "spam":
     input_sms = st.text_area("Enter the message")
 
     if st.button('Predict'):
-        transformed_sms = transform_text(input_sms)
-        vector_input = tfidf.transform([transformed_sms])
+        # transformed_sms = transform_text(input_sms)
+        vector_input = tfidf.transform([input_sms])
         result = model.predict(vector_input)[0]
         if result == 1:
             st.header("Spam")
