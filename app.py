@@ -9,7 +9,6 @@ import nltk
 from nltk.stem.porter import PorterStemmer
 import nltk
 
-nltk.download('punkt')
 
 
 with open('model.pkl', 'rb') as model_file:
