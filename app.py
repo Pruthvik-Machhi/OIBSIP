@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import pickle
 import streamlit as st
-import pickle
 import string
 from nltk.corpus import stopwords
 import nltk
