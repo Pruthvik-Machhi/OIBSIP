@@ -7,6 +7,10 @@ import string
 from nltk.corpus import stopwords
 import nltk
 from nltk.stem.porter import PorterStemmer
+import nltk
+
+nltk.download('punkt')
+
 
 with open('model.pkl', 'rb') as model_file:
     clf_iris = pickle.load(model_file)
